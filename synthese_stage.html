@@ -1,195 +1,129 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Note de synthèse du stage</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+	<title>Note de synthèse du stage</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!-- Wrapper -->
+<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<a href="synthese_stage.html" class="logo">Aaron Edery</a>
-					</header>
+	<!-- Header -->
+	<header id="header">
+		<a href="synthese_stage.html" class="logo">Aaron Edery</a>
+	</header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Portfolio</a></li>
-							<li><a href="Stage.html">Stage</a></li>
-							<li><a href="synthese_stage.html">Note de synthèse du stage</a></li>						</ul>
-						<ul class="icons">
-							<li><a href="https://github.com/Aedery16-11" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+	<!-- Nav -->
+	<nav id="nav">
+		<ul class="links">
+			<li class="active"><a href="index.html">Portfolio</a></li>
+			<li><a href="Stage.html">Stage</a></li>
+			<li><a href="synthese_stage.html">Note de synthèse du stage</a></li>
+		</ul>
+		<ul class="icons">
+			<li><a href="https://github.com/Aedery16-11" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+		</ul>
+	</nav>
 
-				<!-- Main -->
-					<div id="main">
+	<!-- Main -->
+	<div id="main">
+		<section class="post">
+			<header class="major">
+				<h1>L'entreprise Solocal</h1>
+				<div class="block">
+					<p>
+						<b>Solocal</b> est une société anonyme française (SA), spécialisée dans la communication digitale.
+						Elle est notamment connue pour ses services de référencement local et ses plateformes comme Pages Jaunes et Mappy.
+					</p>
+				</div>
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
+				<h2>Mon équipe</h2>
+				<div class="block">
+					<p>
+						Mon stage a été réalisé au sein de l'équipe Data Core Team, du service informatique, composée de plusieurs ingénieurs
+						en data, utilisant Python, principalement, pour leurs tâches quotidiennes. Elle est surtout responsable de la gestion et l'analyse
+						des données de l'entreprise.
+					</p>
+				</div>
+			</header>
 
-									<h1>L'entreprise Solocal</h1>
-									<p>
-										<b>Solocal</b> est une société anonyme française (SA), spécialisée dans la communication digitale.
-										Elle est notamment connue pour ses services de référencement local et ses plateformes comme Pages Jaunes et Mappy.
-									</p>
-
-									<h2>Mon équipe</h2>
-									<p>
-										Mon stage a été réalisé au sein de l'équipe Data Core Team, du service informatique, composée de plusieurs ingénieurs
-										en data, utilisant Python, principalement, pour leurs tâches quotidiennes. Elle est surtout responsable de la gestion et l'analyse
-										des données de l'entreprise.
-									</p>
-								</header>
-								<div class="image main">
-									<img src="images/solocal.png" alt="" style="float: left; margin-right: 10px;" />
-								</div>
-								<p>
-									Dans le cadre de mon stage de première année de <b>BTS SIO</b>, j'ai effectué un stage en développement informatique au sein de Solocal.
-									Cette note de synthèse a pour objectif de vous présenter le projet auquel j'ai participé, les technologies utilisées, ainsi que les compétences que j'ai développées.
-								</p>
-
-								<h1>Présentation du projet</h1>
-								<p>
-									Au cours de mon stage, j'ai travaillé sur un projet visant à créer une application de <b>gestion des habilitations</b> des employés,
-									dont je détaillerai le fonctionnement.
-								</p>
-
-								<h2>Technologies utilisées</h2>
-								<p>
-									<img src="images/Flask_logo.svg.png" width="170px" style="float: left; margin-right: 10px;" />
-									Ce projet a été principalement réalisé avec <b>Flask</b>, qui est un <b>micro-framework</b> (ensemble d'outils utiles au développement,
-									minimaliste dans le cas de Flask) permettant de créer des applications web simples. <br><br>
-
-									<img src="images/google-cloud-platform-logo-icon-256x227-xl1ymvtt.png" width="120px" style="float: left; margin-right: 10px;" />
-									Beaucoup de données utiles pour que la webapp fonctionne étaient conservées dans une base de données <b>Google BigQuery</b>.
-									Il s'agit d'un service de <b>Google Cloud Platform</b> (GCP) conçu pour exécuter des requêtes <b>SQL</b> sur de vastes ensembles de données.
-									BigQuery est capable de traiter rapidement une quantité massive de données présentes dans le cloud à l'aide de requêtes SQL,
-									ce qui fut utilisé dans le projet pour les traiter. <br><br>
-
-									<img src="images/pandas-logo-300.png" width="150px" style="float: left; margin-right: 10px; " />
-									L'utilisation de <b>librairies</b> Python telles que <b>pandas</b> et <b>pandasql</b> m'a permis de filtrer et de formater les données avant de les afficher.
-									"pandas" est une bibliothèque très utilisée pour la manipulation et l'analyse de données Excel, offrant un type de structure de données performant : le
-									<b>DataFrame</b>. "pandasql", quant à lui, permet d'exécuter des requêtes SQL directement sur des DataFrames pandas, facilitant ainsi le traitement des données
-									au sein de l'application. <br><br>
-
-									En plus de ces technologies, j'ai dû configurer l'environnement de développement en utilisant un <b>environnement virtuel Python</b>.
-									Cela permet de gérer les <b>dépendances/modules</b> spécifiques au projet de manière isolée. La gestion des dépendances était effectuée à l'aide d'un fichier
-									requirements.txt, qui liste toutes les librairies, frameworks nécessaires pour faire fonctionner l'application, et ce, dans la version dans laquelle elles ont été installées pour coder le projet.
-								</p>
-
-
-								<h2>Fonctionnement du projet</h2>
-								<p>
-									Cette application, construite en <b>Flask</b>, se connecte à une base de
-									données <b>Google BigQuery</b> ainsi qu'à un fichier excel et .json, le tout dans le but d'en tirer des informations
-									qu'elle affichera sur la page web à travers des templates HTML. L'utilisateur peut choisir un secteur (Marketing, Data..), un groupe de
-									ressources, c'est-à-dire les ressources auxquelles le collaborateur aura accès (Google Cloud PlatForm [GCP],
-									SAS [Statistical Analysis System]..) et enfin le nom de l'employé en question. <br>
-									Cependant, étant donné qu'il ne s'agit pas de l'équipe informatique qui dispose du droit de changer l'habilitation
-									de quelqu'un, l'application ne la change pas elle-même, mais va plutôt rassembler les informations entrées,
-									les manipuler afin de trouver certaines données dans le fichier excel à l'aide de certains outils, tel que <b>"pandas"</b>,
-									et inclure ces données dans un mail pré-écrit qui sera automatiquement envoyé à l'équipe disposée à modifier les habilitations.
-								</p>
-
-								<h2>Compétences développées</h2>
-								<p>
-									Grâce à ce stage, j'ai pu améliorer ma maîtrise de Flask, mais aussi de la gestion des requêtes et des templates.
-									En plus des compétences techniques, j'ai acquis une vision plus globale du déroulement d'un projet et de ma contribution à celui-ci. <br>
-									Je prends désormais conscience qu'un gros travail de recherche doit être fourni. Cela inclut non seulement la recherche d'outils adaptés au projet,
-									mais aussi l'apprentissage rapide de leur utilisation. J'ai donc appris à rechercher correctement sur internet, à mieux
-									comprendre les documentations, ainsi que de m'aider de diverses ressources, telles que des vidéos explicatives ou des tutoriels en ligne,
-									et ce, dans le but d'adapter ce que je vois à ma situation. <br>
-									Je me suis donc rendu compte de mes problèmes d'organisation ainsi que tout ce qui entoure le simple code du projet, notamment la communication avec mes collègues, ou encore la gestion de base
-									de donnée avec BigQuery qui fut nouveau pour moi.
-								</p>
-
-								<h1>Conclusion</h1>
-								<p>
-									Ce stage a été une étape importante dans mon parcours. J'ai pu mettre en pratique mes compétences tout en découvrant de nouvelles technologies.
-									J'ai découvert de nombreux aspects de la vie d'un développeur, et remarqué que cela ne se limite pas simplement
-									à du codage, mais bien à de la recherche, de l'organisation, de la communication et enfin de la programmation.
-								</p>
-							</section>
-
+			<div class="block-container">
+				<div class="block">
+					<div class="image main">
+						<img src="images/solocal.png" alt="" />
 					</div>
-
-<!--				&lt;!&ndash; Footer &ndash;&gt;-->
-<!--					<footer id="footer">-->
-<!--						<section>-->
-<!--							<form method="post" action="#">-->
-<!--								<div class="fields">-->
-<!--									<div class="field">-->
-<!--										<label for="name">Name</label>-->
-<!--										<input type="text" name="name" id="name" />-->
-<!--									</div>-->
-<!--									<div class="field">-->
-<!--										<label for="email">Email</label>-->
-<!--										<input type="text" name="email" id="email" />-->
-<!--									</div>-->
-<!--									<div class="field">-->
-<!--										<label for="message">Message</label>-->
-<!--										<textarea name="message" id="message" rows="3"></textarea>-->
-<!--									</div>-->
-<!--								</div>-->
-<!--								<ul class="actions">-->
-<!--									<li><input type="submit" value="Send Message" /></li>-->
-<!--								</ul>-->
-<!--							</form>-->
-<!--						</section>-->
-<!--						<section class="split contact">-->
-<!--							<section class="alt">-->
-<!--								<h3>Address</h3>-->
-<!--								<p>1234 Somewhere Road #87257<br />-->
-<!--								Nashville, TN 00000-0000</p>-->
-<!--							</section>-->
-<!--							<section>-->
-<!--								<h3>Phone</h3>-->
-<!--								<p><a href="#">(000) 000-0000</a></p>-->
-<!--							</section>-->
-<!--							<section>-->
-<!--								<h3>Email</h3>-->
-<!--								<p><a href="#">info@untitled.tld</a></p>-->
-<!--							</section>-->
-<!--							<section>-->
-<!--								<h3>Social</h3>-->
-<!--								<ul class="icons alt">-->
-<!--									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>-->
-<!--									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>-->
-<!--									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>-->
-<!--									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>-->
-<!--								</ul>-->
-<!--							</section>-->
-<!--						</section>-->
-<!--					</footer>-->
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-
+					<p>
+						Dans le cadre de mon stage de première année de <b>BTS SIO</b>, j'ai effectué un stage en développement informatique au sein de Solocal.
+						Cette note de synthèse a pour objectif de vous présenter le projet auquel j'ai participé, les technologies utilisées, ainsi que les compétences que j'ai développées. Pour en savoir plus sur cette entreprise, <a href="cv%20tableau_synthese%20pp/Entreprise-Solocal.pptx" target="_blank">cliquez ici.</a>
+					</p>
+				</div>
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<h1>Présentation du projet</h1>
+			<div class="block">
+				<p>
+					Au cours de mon stage, j'ai travaillé sur un projet visant à créer une application de <b>gestion des habilitations</b> des employés,
+					dont je détaillerai le fonctionnement.
+				</p>
+			</div>
 
-	</body>
+			<h2>Technologies utilisées</h2>
+			<div class="block-container">
+				<div class="block">
+					<img src="images/Flask_logo.svg.png" width="170px" style="float: left; margin-right: 10px;" />
+					<p>
+						Ce projet a été principalement réalisé avec <b>Flask</b>, qui est un <b>micro-framework</b> permettant de créer des applications web simples.
+					</p>
+				</div>
+				<div class="block">
+					<img src="images/google-cloud-platform-logo-icon-256x227-xl1ymvtt.png" width="120px" style="float: left; margin-right: 10px;" />
+					<p>
+						Les données étaient conservées dans une base de données <b>Google BigQuery</b>, un service de <b>Google Cloud Platform</b> (GCP) conçu pour exécuter des requêtes <b>SQL</b> sur de vastes ensembles de données.
+					</p>
+				</div>
+			</div>
+
+			<div class="block">
+				<div style="display: flex; align-items: center; gap: 20px;">
+					<img src="images/pandas-logo-300.png" width="150px" style="object-fit: contain;" />
+					<p>
+						L'utilisation de <b>librairies</b> Python telles que <b>pandas</b> et <b>pandasql</b> m'a permis de filtrer et de formater les données avant de les afficher.
+						"pandas" est une bibliothèque très utilisée pour la manipulation et l'analyse de données Excel, offrant un type de structure de données performant : le
+						<b>DataFrame</b>. "pandasql", quant à lui, permet d'exécuter des requêtes SQL directement sur des DataFrames pandas, facilitant ainsi le traitement des données
+						au sein de l'application.
+					</p>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="block">
+			<h3>Me contacter</h3>
+			<p>Vous pouvez me contacter à l'adresse email suivante : <a href="mailto:aedery.16.11@gmail.com">aedery16.11@gmail.com</a></p>
+		</div>
+	</footer>
+
+	<!-- Copyright -->
+	<div id="copyright">
+		<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+	</div>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
 </html>
