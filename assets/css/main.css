@@ -4689,3 +4689,76 @@ input, select, textarea {
 		}
 
 	}
+
+.intro {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.left-align {
+	text-align: left;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.block-container {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.block {
+	flex: 1;
+	border: 1px solid #ccc;
+	padding: 20px;
+	margin: 20px 0;
+	background-color: #f9f9f9;
+	font-family: Arial, sans-serif;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+}
+
+.block p {
+	margin: 0;
+	line-height: 1.6;
+	color: #333;
+}
+
+.progress-container {
+	width: 100%;
+	background-color: #e0e0e0;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.progress-label {
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.progress-bar {
+	height: 10px;
+	background-color: #18bfef;
+	width: 65%;
+	border-radius: 5px 0 0 5px;
+}
+
+.skill-image {
+	max-width: 100px;
+	max-height: 100px;
+	width: auto;
+	height: auto;
+}
+
+.stage-image {
+	max-width: 50%;
+	height: auto;
+	display: block;
+	margin: 0 auto 10px;
+}
