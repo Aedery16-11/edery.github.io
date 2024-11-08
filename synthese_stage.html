@@ -21,13 +21,14 @@
 	<nav id="nav">
 		<ul class="links">
 			<li class="active"><a href="index.html">Portfolio</a></li>
-			<li><a href="Stage.html">Stage</a></li>
+			<li><a href="veliko.html">Veliko</a></li>
 			<li><a href="synthese_stage.html">Note de synthèse du stage</a></li>
 		</ul>
 		<ul class="icons">
 			<li><a href="https://github.com/Aedery16-11" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 			<li><a href="https://www.linkedin.com/in/aaron-edery-0ab803300/" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 		</ul>
+
 	</nav>
 
 	<!-- Main -->
@@ -59,7 +60,7 @@
 					</div>
 					<p>
 						Dans le cadre de mon stage de première année de <b>BTS SIO</b>, j'ai effectué un stage en développement informatique au sein de Solocal.
-						Cette note de synthèse a pour objectif de vous présenter le projet auquel j'ai participé, les technologies utilisées, ainsi que les compétences que j'ai développées. Pour en savoir plus sur cette entreprise, <a href="cv%20tableau_synthese%20pp/Entreprise-Solocal.pptx" target="_blank">cliquez ici.</a>
+						Cette note de synthèse a pour objectif de vous présenter le projet auquel j'ai participé, les technologies utilisées, ainsi que les compétences que j'ai développées. Pour en savoir plus sur cette entreprise, <a href="cv%20tableau_synthese%20pp/Entreprise-Solocal.pptx" target="_blank"><strong>cliquez ici</strong>.</a>
 					</p>
 				</div>
 			</div>
@@ -72,7 +73,7 @@
 				</p>
 			</div>
 
-			<h2>Technologies utilisées</h2>
+			<h2>Technologies principales utilisées</h2>
 			<div class="block-container">
 				<div class="block">
 					<img src="images/Flask_logo.svg.png" width="170px" style="float: left; margin-right: 10px;" />
@@ -101,7 +102,54 @@
 						requirements.txt, qui liste toutes les librairies, frameworks nécessaires pour faire fonctionner l'application, et ce, dans la version dans laquelle elles ont été installées pour coder le projet.
 
 					</p>
+
+
 				</div>
+
+			</div>
+
+			<h2>Fonctionnement du projet</h2>
+			<div class="block">
+				<p>
+					Cette application, construite en <b>Flask</b>, se connecte à une base de
+					données <b>Google BigQuery</b> ainsi qu'à un fichier excel et .json, le tout dans le but d'en tirer des informations
+					qu'elle affichera sur la page web à travers des templates HTML. L'utilisateur peut choisir un secteur (Marketing, Data..), un groupe de
+					ressources, c'est-à-dire les ressources auxquelles le collaborateur aura accès (Google Cloud PlatForm [GCP],
+					SAS [Statistical Analysis System]..) et enfin le nom de l'employé en question.
+				</p>
+				<p>
+					Cependant, étant donné qu'il ne s'agit pas de l'équipe informatique qui dispose du droit de changer l'habilitation
+					de quelqu'un, l'application ne la change pas elle-même, mais va plutôt rassembler les informations entrées,
+					les manipuler afin de trouver certaines données dans le fichier excel à l'aide de certains outils, tel que <b>"pandas"</b>,
+					et inclure ces données dans un mail pré-écrit qui sera automatiquement envoyé à l'équipe disposée à modifier les habilitations.
+				</p>
+			</div>
+
+			<h2>Compétences développées</h2>
+			<div class="block">
+				<p>
+					Grâce à ce stage, j'ai pu améliorer ma maîtrise de Flask, mais aussi de la gestion des requêtes et des templates.
+					En plus des compétences techniques, j'ai acquis une vision plus globale du déroulement d'un projet et de ma contribution à celui-ci.
+				</p>
+				<p>
+					Je prends désormais conscience qu'un gros travail de recherche doit être fourni. Cela inclut non seulement la recherche d'outils adaptés au projet,
+					mais aussi l'apprentissage rapide de leur utilisation. J'ai donc appris à rechercher correctement sur internet, à mieux
+					comprendre les documentations, ainsi que de m'aider de diverses ressources, telles que des vidéos explicatives ou des tutoriels en ligne,
+					et ce, dans le but d'adapter ce que je vois à ma situation.
+				</p>
+				<p>
+					Je me suis donc rendu compte de mes problèmes d'organisation ainsi que tout ce qui entoure le simple code du projet, notamment la communication avec mes collègues, ou encore la gestion de base
+					de donnée avec BigQuery qui fut nouveau pour moi.
+				</p>
+			</div>
+
+			<h1>Conclusion</h1>
+			<div class="block">
+				<p>
+					Ce stage a été une étape importante dans mon parcours. J'ai pu mettre en pratique mes compétences tout en découvrant de nouvelles technologies.
+					J'ai découvert de nombreux aspects de la vie d'un développeur, et remarqué que cela ne se limite pas simplement
+					à du codage, mais bien à de la recherche, de l'organisation, de la communication et enfin de la programmation.
+				</p>
 			</div>
 		</section>
 	</div>
