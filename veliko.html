@@ -1,13 +1,38 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>Project Veliko</title>
+	<style>
+		.image-container {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			overflow: hidden;
+		}
+
+		img {
+			position: absolute;
+			left: 0;
+			top: 0;
+			opacity: 0;
+			transition: opacity 0.5s ease-in-out;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.visible {
+			opacity: 1;
+		}
+	</style>
+
+	<title>Projet Veliko</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
+
 
 <!-- Wrapper -->
 <div id="wrapper">
@@ -22,13 +47,14 @@
 		<ul class="links">
 			<li><a href="index.html">Portfolio</a></li>
 			<li class="active"><a href="veliko.html">Veliko</a></li>
-			<li><a href="synthese_stage.html">Note de synthèse du stage</a></li>
+			<li><a href="stage_solocal_1re_annee.html">Stage SOLOCAL</a></li>
 		</ul>
 		<ul class="icons">
 			<li><a href="https://github.com/Aedery16-11" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 			<li><a href="https://www.linkedin.com/in/aaron-edery-0ab803300/" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 		</ul>
 	</nav>
+
 
 	<!-- Main -->
 	<div id="main">
@@ -73,6 +99,17 @@
 				</ul>
 			</div>
 
+			<h1>Galerie</h1>
+			<div class="block">
+				<div class="image-container">
+					<img class="visible image" src="images/photo%20veliko%201.png" alt="Photo Veliko 1" />
+					<img src="images/photo%20veliko%202.png" alt="Photo Veliko 2" />
+					<img src="images/photo%20veliko%203.png" alt="Photo Veliko 3" />
+					<img src="images/photo%20veliko%204.png" alt="Photo Veliko 4" />
+				</div>
+				<button onclick="previousImage()">Précédent</button>
+				<button onclick="nextImage()">Suivant</button>
+			</div>
 			<h1>Difficultés rencontrées</h1>
 			<div class="block">
 				<div class="block-content">
@@ -108,6 +145,41 @@
 	</footer>
 
 </div>
+
+<script>
+	let index = 0;
+	const images = document.querySelectorAll('.image-container img');
+
+	function showImage(index) {
+		images.forEach((img, i) => {
+			if (i === index) {
+				img.classList.add('visible');
+			} else {
+				img.classList.remove('visible');
+			}
+		});
+	}
+
+	function nextImage() {
+		index++;
+		if (index >= images.length) {
+			index = 0;
+		}
+		showImage(index);
+	}
+
+	function previousImage() {
+		index--;
+		if (index < 0) {
+			index = images.length - 1;
+		}
+		showImage(index);
+	}
+
+	// Initialize the first image as visible
+	showImage(index);
+</script>
+
 
 <script src="assets/js/main.js"></script>
 </body>
